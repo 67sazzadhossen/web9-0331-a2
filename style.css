@@ -5,6 +5,41 @@
 }
 
 /* ======= Common Styles ======== */
+.cmn-desc {
+    color: #5A5A5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.cmn-btn {
+    border-radius: 8px;
+    background: #FF5400;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    gap: 8px;
+    border: none;
+}
+
+.cmn-big-btn {
+    width: 174px;
+    height: 52px;
+
+}
 
 .cmn-clr {
     color: #FF5400;
@@ -16,6 +51,8 @@
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+    display: flex;
+    gap: 16px;
 }
 
 .header {
@@ -61,10 +98,89 @@
 }
 
 
+/* ============= Banner section styles =========== */
+
+.banner-section {
+    background-image: url(/Images/Group\ 13\ \(1\)\ \(1\).png);
+    height: 500px;
+    border-radius: 16px;
+}
+
+.banner-heading {
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.banner-desc {
+    padding: 106px 185px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    text-align: center;
+    display: flex;
+    gap: 48px;
+    flex-direction: column;
+
+}
+
+.form-section {
+    display: flex;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 16px;
+    gap: 24px;
+}
+
+.input {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    padding: 0 16px;
+    outline: none;
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-box {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    color: rgba(19, 19, 24, 0.50);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 /* ======== Mobile Display ======= */
 @media only screen and (max-width: 600px) {
 
+
+    /* ================= Mobile Nav =============== */
     .header {
         padding: 0 20px;
     }
@@ -75,5 +191,46 @@
 
     .menu-icon {
         display: block;
+    }
+
+    /* ================== Mobile banner ================= */
+
+    .banner-heading {
+        font-size: 22px;
+    }
+
+    .cmn-desc {
+        font-size: 14px;
+    }
+
+    .banner-desc {
+        padding: 32px 16px;
+        border-radius: 16px;
+        background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+        text-align: center;
+        display: flex;
+        gap: 28px;
+        flex-direction: column;
+
+    }
+
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .cmn-big-btn {
+        width: 100%;
+        height: 52px;
+
     }
 }
